@@ -1,0 +1,41 @@
+{
+  "name": "quiz",
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "scripts": {
+    "start-ios": "react-native run-ios && npm run lint-watch",
+    "start-android": "react-native run-android && npm run lint-watch",
+    "lint": "esw app/**",
+    "lint-watch": "esw -w --changed app/**",
+    "test": "jest",
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "expo": "^29.0.0",
+    "he": "^1.1.1",
+    "react": "16.3.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-29.0.0.tar.gz",
+    "react-navigation": "^2.11.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "3.0.0",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.2.1",
+    "eslint-watch": "^3.1.2",
+    "jest": "20.0.4",
+    "react-test-renderer": "16.0.0-alpha.12",
+    "rimraf": "^2.6.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
